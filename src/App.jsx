@@ -2,8 +2,9 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Experience from './components/Experience';
+import Education from './components/Education';
 import Skills from './components/Skills';
+import Tools from './components/Tools';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
@@ -14,14 +15,15 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Experience />
+        <Education />
         <Skills />
+        <Tools />
         <Projects />
         <Contact />
       </main>
-      <footer>
-        <div className="container" style={{ textAlign: 'center', padding: '2rem 0', color: 'var(--text-secondary)', borderTop: '1px solid var(--glass-border)' }}>
-          <p>© {new Date().getFullYear()} Berlin Beltran. Built with code & data.</p>
+      <footer className="footer">
+        <div className="container footer-container">
+          <p>&copy; {new Date().getFullYear()} Berlin Beltran. Transformando datos en decisiones.</p>
         </div>
       </footer>
     </div>
