@@ -2,54 +2,54 @@ import React from 'react';
 import './Hero.css';
 
 const Hero = () => {
-  // Generate random dots for the background effect
-  const dots = Array.from({ length: 40 }).map((_, i) => ({
-    id: i,
-    left: `${Math.random() * 100}%`,
-    animationDelay: `${Math.random() * 10}s`,
-    animationDuration: `${10 + Math.random() * 20}s`,
-    width: `${1 + Math.random() * 3}px`,
-    height: `${1 + Math.random() * 3}px`,
-  }));
-
   return (
     <section id="home" className="hero">
-      <div className="data-grid-dots">
-        {dots.map(dot => (
-          <div 
-            key={dot.id} 
-            className="data-dot" 
-            style={{
-              left: dot.left,
-              animationDelay: dot.animationDelay,
-              animationDuration: dot.animationDuration,
-              width: dot.width,
-              height: dot.height
-            }}
-          />
-        ))}
+      {/* Decorative sparkles */}
+      <div className="hero-sparkle sparkle-1">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" fill="currentColor"/>
+        </svg>
       </div>
+      <div className="hero-sparkle sparkle-2">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" fill="currentColor"/>
+        </svg>
+      </div>
+      
       <div className="container hero-container">
-        <div className="hero-content">
-          <p className="hero-greeting">Hola, mi nombre es</p>
-          <h1 className="hero-name">Berlin Beltran.</h1>
-          <h2 className="hero-title">Ingeniero Full Stack & <span className="text-gradient">Data Scientist.</span></h2>
-          <p className="hero-description">
-            Construyo <strong>sistemas empresariales robustos</strong> y los poténcio con <strong>Inteligencia Artificial</strong>. 
-            Combino mi experiencia en arquitecturas complejas (Odoo, C#, .NET) con modelos de Machine Learning (Python) para transformar problemas técnicos en soluciones que escalan y generan impacto real.
-          </p>
-          <div className="hero-buttons">
-            <a href="#projects" className="btn btn-primary">Ver mis Proyectos</a>
-            <a href="/cv_alex_beltran.pdf" className="btn btn-secondary">Descargar CV</a>
-          </div>
+        {/* Data Icon */}
+        <div className="hero-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            <polyline points="7.5 4.21 12 6.81 16.5 4.21"/>
+            <polyline points="7.5 19.79 7.5 14.6 3 12"/>
+            <polyline points="21 12 16.5 14.6 16.5 19.79"/>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+            <line x1="12" y1="22.08" x2="12" y2="12"/>
+          </svg>
+          <span className="icon-dot"></span>
         </div>
-        <div className="hero-graphic">
-          <div className="data-node">
-            <div className="core"></div>
-            <div className="orbit orbit-1"></div>
-            <div className="orbit orbit-2"></div>
-            <div className="orbit orbit-3"></div>
-          </div>
+
+        <h1 className="hero-name">
+          Berlin <span className="text-italic">Beltran</span>
+        </h1>
+        
+        <p className="hero-roles">
+          Data Scientist <span className="separator">*</span> BI Developer <span className="separator">*</span> AI Engineer
+        </p>
+        
+        <p className="hero-description">
+          Ingeniero de Sistemas especializado en Business Intelligence, Automatizacion e IA. 
+          Transformo datos en decisiones estrategicas mediante Power BI, Python y Machine Learning.
+        </p>
+
+        <div className="hero-buttons">
+          <a href="#projects" className="btn btn-primary">
+            Explorar portafolio
+          </a>
+          <a href="#tools" className="btn btn-secondary">
+            Stack creativo
+          </a>
         </div>
       </div>
     </section>

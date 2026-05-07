@@ -1,0 +1,88 @@
+.tools {
+  background: var(--bg-color);
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.circular-progress {
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+
+.circular-progress svg {
+  transform: rotate(0deg);
+}
+
+.progress-circle {
+  transition: stroke-dashoffset 1s ease-out;
+}
+
+.circular-progress-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.circular-abbr {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+.circular-percentage {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.tool-name {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.5rem;
+  }
+
+  .circular-progress {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circular-progress svg {
+    width: 80px;
+    height: 80px;
+  }
+}
