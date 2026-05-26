@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">
-            <span className="italic">Contacto</span>
+            <span className="italic">Contact</span>
           </h2>
           <div className="section-divider">
             <span></span>
@@ -18,11 +18,10 @@ const Contact = () => {
 
         <div className="contact-content">
           <div className="contact-card card">
-            <h3 className="contact-heading">Trabajemos juntos</h3>
+            <h3 className="contact-heading">Let&apos;s Work Together</h3>
             <p className="contact-description">
-              Actualmente estoy en busqueda de oportunidades como <strong>Data Scientist</strong> o <strong>BI Developer</strong>. 
-              Si tienes un proyecto interesante, una vacante o simplemente quieres hablar sobre datos e IA, 
-              mi bandeja de entrada esta abierta.
+              I am currently open to international opportunities as an <strong>AI Engineer</strong>, <strong>Full-Stack Developer</strong>, or <strong>Data Scientist</strong>. 
+              Whether you have an interesting project, an open position, or just want to chat about AI and data architecture, my inbox is open.
             </p>
             
             <div className="contact-info">
@@ -53,7 +52,7 @@ const Contact = () => {
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                 <polyline points="22,6 12,13 2,6"/>
               </svg>
-              Enviar mensaje
+              Send Message
             </a>
             
             <div className="contact-social">

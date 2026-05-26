@@ -7,7 +7,7 @@ const About = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">
-            Acerca <span className="italic">de Mi</span>
+            About <span className="italic">Me</span>
           </h2>
           <div className="section-divider">
             <span></span>
@@ -26,19 +26,17 @@ const About = () => {
                 </svg>
               </div>
             </div>
-            <p className="about-image-caption">Hola soy Berlin :)</p>
+            <p className="about-image-caption">Hey, I&apos;m Berlin :)</p>
           </div>
 
           <div className="about-card card">
             <p className="about-text">
-              Soy un <strong>Ingeniero de Sistemas de Computo</strong> especializado en Business Intelligence, 
-              Automatizacion e IA. Con experiencia disenando ecosistemas de datos con Power BI y Python, 
-              integrando agentes inteligentes y modelos de Machine Learning para decisiones predictivas.
+              Leveraging my background in <strong>Computer Systems Engineering</strong> combined with professional 
+              training in cognitive frameworks and methodology, I bridge the gap between advanced product development 
+              and Artificial Intelligence to solve complex business challenges.
             </p>
             <p className="about-text">
-              Cuando no estoy analizando datos, me encontraras explorando nuevas herramientas de IA, 
-              optimizando flujos de trabajo o contribuyendo a proyectos que transformen informacion 
-              bruta en activos estrategicos de alto impacto.
+              I thrive at the intersection of clean code, deep analytics, and autonomous intelligent automation.
             </p>
             
             <div className="about-social">
@@ -67,14 +65,14 @@ const About = () => {
                   <polyline points="7 10 12 15 17 10"/>
                   <line x1="12" y1="15" x2="12" y2="3"/>
                 </svg>
-                Descargar CV
+                Download CV
               </a>
               <a href="#contact" className="btn btn-secondary btn-sm">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                   <polyline points="22,6 12,13 2,6"/>
                 </svg>
-                Contactarme
+                Contact Me
               </a>
             </div>
           </div>

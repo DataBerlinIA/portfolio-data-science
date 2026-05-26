@@ -26,20 +26,20 @@ const Hero = () => {
         </h1>
         
         <p className="hero-roles">
-          Data Scientist <span className="separator">*</span> BI Developer <span className="separator">*</span> AI Engineer
+          AI Engineer <span className="separator">•</span> Full-Stack Developer <span className="separator">•</span> Data Scientist
         </p>
         
         <p className="hero-description">
-          Ingeniero de Sistemas especializado en Business Intelligence, Automatizacion e IA. 
-          Transformo datos en decisiones estrategicas mediante Power BI, Python y Machine Learning.
+          Computer Systems Engineer specializing in Artificial Intelligence, Data Science, and Full-Stack Development. 
+          Dedicated to architecting autonomous AI systems, intelligent agentic workflows, and deploying modern cloud solutions.
         </p>
 
         <div className="hero-buttons">
           <a href="#projects" className="btn btn-primary">
-            Explorar portafolio
+            Explore Portfolio
           </a>
           <a href="#tools" className="btn btn-secondary">
-            Stack creativo
+            Tech Stack
           </a>
         </div>
       </div>
