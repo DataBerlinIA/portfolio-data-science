@@ -2,14 +2,14 @@ import React from 'react';
 import './Tools.css';
 
 const toolsData = [
-  { name: 'Power BI', abbr: 'PBI', percentage: 90, color: '#F2C811' },
-  { name: 'Python', abbr: 'Py', percentage: 85, color: '#3776AB' },
+  { name: 'Google AI Studio', abbr: 'AI', percentage: 90, color: '#4285F4' },
+  { name: 'Vercel', abbr: 'Vc', percentage: 88, color: '#000000' },
+  { name: 'Supabase', abbr: 'Sb', percentage: 85, color: '#3ECF8E' },
   { name: 'PostgreSQL', abbr: 'SQL', percentage: 88, color: '#336791' },
-  { name: 'Supabase', abbr: 'Sb', percentage: 80, color: '#3ECF8E' },
-  { name: 'Pandas', abbr: 'Pd', percentage: 85, color: '#150458' },
-  { name: 'Jupyter', abbr: 'Jp', percentage: 82, color: '#F37626' },
-  { name: 'Git', abbr: 'Git', percentage: 78, color: '#F05032' },
-  { name: 'Looker', abbr: 'Lk', percentage: 75, color: '#4285F4' },
+  { name: 'Python', abbr: 'Py', percentage: 85, color: '#3776AB' },
+  { name: 'Power BI', abbr: 'PBI', percentage: 90, color: '#F2C811' },
+  { name: 'Excel Advanced', abbr: 'Ex', percentage: 85, color: '#217346' },
+  { name: 'Odoo', abbr: 'Od', percentage: 80, color: '#714B67' },
 ];
 
 const CircularProgress = ({ percentage, abbr, color }) => {
@@ -56,7 +56,7 @@ const Tools = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">
-            Mis <span className="italic">Herramientas</span>
+            My <span className="italic">Tools</span>
           </h2>
           <div className="section-divider">
             <span></span>
@@ -64,7 +64,7 @@ const Tools = () => {
             <span></span>
           </div>
           <p className="section-subtitle">
-            El software y plataformas que uso diariamente para transformar datos en insights.
+            Software and platforms I use daily to build AI-powered solutions and data insights.
           </p>
         </div>
 

@@ -3,27 +3,27 @@ import './Education.css';
 
 const educationData = [
   {
-    degree: 'Ingenieria en Sistemas de Computo',
+    degree: 'B.S. in Computer Systems Engineering',
     institution: 'Universidad del Sur',
     location: 'Playa del Carmen, MX',
-    period: 'Sept. 2022 - Abril 2025',
-    description: 'Especializacion en arquitectura de software, gestion de bases de datos y optimizacion de procesos.',
+    period: 'Sept. 2022 - April 2025',
+    description: 'Specialization in software architecture, database management, and process optimization.',
     icon: '🎓'
   },
   {
-    degree: 'Especializacion en Ciencia de Datos y BI',
+    degree: 'Data Science & BI Specialization',
     institution: 'Codigo Facilito',
-    location: 'Remoto',
-    period: 'Finalizado: Dic. 2024',
-    description: 'Formacion intensiva en analisis de datos, Power BI, DAX, SQL y Python para ciencia de datos.',
+    location: 'Remote',
+    period: 'Completed: Dec. 2024',
+    description: 'Intensive training in data analysis, Power BI, DAX, SQL, and Python for data science.',
     icon: '📊'
   },
   {
-    degree: 'Licenciatura en Educacion Primaria',
+    degree: 'B.A. in Primary Education',
     institution: 'CREN',
     location: 'Bacalar, MX',
-    period: 'Ago. 2013 - Ago. 2017',
-    description: 'Formacion en pedagogia, gestion de grupos y metodologias de aprendizaje.',
+    period: 'Aug. 2013 - Aug. 2017',
+    description: 'Background in pedagogy, group management, and learning methodologies.',
     icon: '📚'
   }
 ];
@@ -34,7 +34,7 @@ const Education = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">
-            Mi <span className="italic">Educacion</span>
+            My <span className="italic">Education</span>
           </h2>
           <div className="section-divider">
             <span></span>

@@ -3,34 +3,34 @@ import './Projects.css';
 
 const projectsData = [
   {
-    title: 'Heart Disease Prediction',
-    description: 'Modelo predictivo de Machine Learning con 95% de precision para estimar probabilidad de enfermedad cardiaca procesando datos clinicos de 500 pacientes.',
-    tools: ['Python', 'Polars', 'NumPy', 'Pandas', 'Power BI'],
-    metric: 'ML Analytics',
+    title: 'Autonomous AI Operational Ecosystem',
+    description: 'Built autonomous AI Agents integrated with Google AI Studio and managed through a cloud serverless architecture with Supabase and PostgreSQL to optimize operational enterprise tasks.',
+    tools: ['Google AI Studio', 'Supabase', 'AI Agents', 'Claude Code'],
+    metric: 'AI ENGINEERING',
     github: 'https://github.com/DataBerlinIA',
     demo: '#'
   },
   {
-    title: 'Dashboard BI - Ah Cacao',
-    description: 'Tableros interactivos en Power BI para visualizacion de metricas criticas y KPIs estrategicos, permitiendo interpretacion de datos en tiempo real.',
-    tools: ['Power BI', 'DAX', 'SQL', 'ETL'],
-    metric: 'Business Intelligence',
+    title: 'Full-Stack Cloud Architecture — Ah Cacao',
+    description: 'Designed and deployed a high-performance web application hosted on Vercel to manage and analyze consumer behavior for a 5,000-client database, fully synchronized with Odoo ERP.',
+    tools: ['Vercel', 'Odoo', 'PostgreSQL', 'JavaScript'],
+    metric: 'CLOUD DEV',
     github: '#',
     demo: '#'
   },
   {
-    title: 'Sistema de Gestion y Fidelizacion',
-    description: 'Arquitectura de datos para gestion de 5,000 clientes con sistema de puntos de compra integrado a ERP Odoo.',
-    tools: ['Odoo 18', 'Python', 'PostgreSQL', 'XML'],
-    metric: 'Data Architecture',
-    github: '#',
+    title: 'Predictive Clinical Health Framework',
+    description: 'Architected an end-to-end intelligent data framework that achieved a 95% accuracy rate in predicting heart disease risks, utilizing Python for advanced ETL processes and Machine Learning modeling.',
+    tools: ['Python', 'Machine Learning', 'Polars', 'Pandas'],
+    metric: 'DATA SCIENCE',
+    github: 'https://github.com/DataBerlinIA',
     demo: '#'
   },
   {
-    title: 'Agentes Inteligentes IA',
-    description: 'Automatizacion de flujos de atencion mediante IA logrando reduccion del 80% en tiempos de resolucion.',
-    tools: ['n8n', 'AI Agents', 'Odoo', 'APIs'],
-    metric: 'AI Automation',
+    title: 'Enterprise Intelligence Ecosystem',
+    description: 'Engineered robust interactive analytical pipelines in Power BI with complex DAX logic for real-time strategic metric tracking and automated reporting via Looker Studio.',
+    tools: ['Power BI', 'DAX', 'Looker Studio', 'Excel Advanced'],
+    metric: 'BUSINESS INTELLIGENCE',
     github: '#',
     demo: '#'
   }
@@ -42,7 +42,7 @@ const Projects = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">
-            Mis <span className="italic">Proyectos</span>
+            My <span className="italic">Projects</span>
           </h2>
           <div className="section-divider">
             <span></span>
@@ -50,7 +50,7 @@ const Projects = () => {
             <span></span>
           </div>
           <p className="section-subtitle">
-            Proyectos destacados que demuestran mi experiencia en Data Science y BI.
+            Featured projects showcasing my expertise in AI Engineering, Full-Stack Development, and Data Science.
           </p>
         </div>
 

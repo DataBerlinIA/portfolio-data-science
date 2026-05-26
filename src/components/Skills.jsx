@@ -2,22 +2,22 @@ import React from 'react';
 import './Skills.css';
 
 const skillsData = [
-  { name: 'Power BI & DAX', percentage: 90 },
-  { name: 'Python (Pandas, NumPy)', percentage: 85 },
-  { name: 'SQL & Databases', percentage: 88 },
-  { name: 'Machine Learning', percentage: 75 },
-  { name: 'ETL & Data Pipelines', percentage: 82 },
-  { name: 'Data Visualization', percentage: 85 },
-  { name: 'AI & Automation', percentage: 78 },
+  { name: 'AI Agents & Automation', percentage: 90 },
+  { name: 'Full-Stack Dev (Vercel & Supabase)', percentage: 85 },
+  { name: 'Google AI Studio & LLMs', percentage: 88 },
+  { name: 'Python (Pandas, Polars, NumPy)', percentage: 85 },
+  { name: 'Power BI DAX & Advanced BI', percentage: 90 },
+  { name: 'PostgreSQL & Databases', percentage: 88 },
+  { name: 'Odoo ERP (OWL, XML)', percentage: 78 },
 ];
 
 const radarSkills = [
-  { name: 'Analytics', value: 90 },
-  { name: 'BI Tools', value: 88 },
-  { name: 'ML/AI', value: 75 },
-  { name: 'Databases', value: 85 },
-  { name: 'Automation', value: 80 },
-  { name: 'Visualization', value: 85 },
+  { name: 'AI Agents', value: 90 },
+  { name: 'Full-Stack Dev', value: 85 },
+  { name: 'AI Web Apps', value: 88 },
+  { name: 'Data Science', value: 85 },
+  { name: 'Advanced BI', value: 90 },
+  { name: 'Databases', value: 88 },
 ];
 
 const SkillBar = ({ name, percentage }) => (
@@ -156,7 +156,7 @@ const Skills = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">
-            Mis <span className="italic">Habilidades</span>
+            My <span className="italic">Skills</span>
           </h2>
           <div className="section-divider">
             <span></span>
@@ -173,7 +173,7 @@ const Skills = () => {
                   <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" fill="currentColor"/>
                 </svg>
               </span>
-              <h3>Competencia en Habilidades</h3>
+              <h3>Skills Proficiency</h3>
             </div>
             <div className="skills-bars-list">
               {skillsData.map((skill, index) => (
@@ -189,7 +189,7 @@ const Skills = () => {
                   <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" fill="currentColor"/>
                 </svg>
               </span>
-              <h3>Radar de Habilidades</h3>
+              <h3>Skills Radar</h3>
             </div>
             <RadarChart skills={radarSkills} />
           </div>
