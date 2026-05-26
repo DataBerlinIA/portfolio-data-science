@@ -28,7 +28,6 @@ const Navbar = () => {
       <div className="container nav-container">
         <a href="#home" className="logo">
           <span className="logo-text">AI & Data Portfolio</span>
-          <span className="logo-icon">:3</span>
         </a>
         
         <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
