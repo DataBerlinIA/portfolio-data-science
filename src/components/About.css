@@ -20,28 +20,21 @@
   position: relative;
 }
 
-.about-image-placeholder {
+.about-image {
   width: 200px;
   height: 240px;
   border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, var(--bg-color-subtle) 0%, var(--bg-color) 100%);
   border: 2px solid var(--border-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--text-muted);
+  object-fit: cover;
+  object-position: center top;
+  display: block;
   transition: all 0.3s ease;
-  overflow: hidden;
 }
 
-.about-image-placeholder:hover {
+.about-image:hover {
   border-color: var(--accent-teal);
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
-}
-
-.about-image-placeholder svg {
-  opacity: 0.4;
 }
 
 .about-image-caption {

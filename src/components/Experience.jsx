@@ -1,45 +1,86 @@
 import React from 'react';
 import './Experience.css';
 
+const experienceData = [
+  {
+    role: 'AI Engineer & Full-Stack Data Scientist',
+    company: 'Ah Cacao',
+    period: 'Jan 2025 - Dec 2025',
+    type: 'Full-time',
+    highlights: [
+      'Designed a Supabase + PostgreSQL backend architecture to manage and analyze behavior for a 5,000-client database with high referential integrity.',
+      'Built and deployed web apps integrated with Google AI Studio (Gemini) on Vercel, enabling real-time market analysis for internal teams.',
+      'Automated operational workflows with autonomous AI Agents and Claude Code, reducing support resolution time by 80%.',
+      'Engineered Odoo ERP solutions (OWL/XML), optimizing ERP event synchronization into analytical data warehouses.',
+    ],
+    tags: ['AI Agents', 'Supabase', 'Gemini', 'Vercel', 'Odoo ERP'],
+  },
+  {
+    role: 'Data Scientist & BI Engineer',
+    company: 'Predictive Health Ecosystem — Clinical Project',
+    period: 'May 2024 - Dec 2024',
+    type: 'Project',
+    highlights: [
+      'Designed a cardiovascular risk prediction system with 95% accuracy, processing clinical records from 500+ patients.',
+      'Ran ETL pipelines in Python (Pandas & Polars) within Jupyter, optimizing data cleaning and feature engineering ahead of modeling.',
+      'Built interactive Power BI dashboards with advanced DAX so medical staff could explore ML results intuitively.',
+    ],
+    tags: ['Python', 'Machine Learning', 'Power BI', 'DAX'],
+  },
+];
+
 const Experience = () => {
   return (
     <section id="experience" className="experience">
       <div className="container">
-        <h2 className="section-title"><span>02.</span> Dónde He Trabajado</h2>
+        <div className="section-header">
+          <h2 className="section-title">
+            My <span className="italic">Experience</span>
+          </h2>
+          <div className="section-divider">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p className="section-subtitle">
+            Building end-to-end AI products with measurable business impact, from prototype to production.
+          </p>
+        </div>
+
         <div className="timeline">
-          
-          <div className="timeline-item">
-            <div className="timeline-dot"></div>
-            <div className="timeline-content glass-panel">
-              <div className="timeline-header">
-                <h3>Desarrollador Full Stack</h3>
-                <span className="timeline-company text-gradient">Ah Cacao</span>
+          {experienceData.map((job, index) => (
+            <div key={index} className="timeline-item">
+              <div className="timeline-marker">
+                <span className="timeline-dot"></span>
+                {index !== experienceData.length - 1 && <span className="timeline-line"></span>}
               </div>
-              <span className="timeline-date">Enero 2025 – Diciembre 2025 | Playa del Carmen, México</span>
-              <ul className="timeline-achievements">
-                <li>
-                  Desarrollé aplicaciones críticas para el registro y gestión de clientes utilizando <strong>C#</strong>, 
-                  incluyendo un sistema de fidelización (asignación de puntos de compra) altamente escalable e integrado a nivel base de datos.
-                </li>
-                <li>
-                  Implementé automatizaciones y <strong>Agentes Inteligentes</strong> para la atención al cliente usando <strong>Odoo 19 y n8n</strong>, 
-                  diseñando flujos de trabajo avanzados que impactaron directamente en los tiempos de respuesta.
-                </li>
-                <li>
-                  Lideré la modernización del sistema propietario implementando <strong>OWL (Odoo Web Library)</strong> y <strong>XML</strong>, 
-                  llevando el proyecto completo desde la etapa de análisis y diseño hasta el despliegue en producción.
-                </li>
-              </ul>
-              <div className="experience-tech-stack">
-                <span>Odoo 18/19</span>
-                <span>C#</span>
-                <span>OWL / XML</span>
-                <span>n8n</span>
-                <span>Bases de Datos</span>
+
+              <div className="timeline-card card">
+                <div className="timeline-card-header">
+                  <div>
+                    <h3 className="timeline-role">{job.role}</h3>
+                    <p className="timeline-company">{job.company}</p>
+                  </div>
+                  <div className="timeline-meta">
+                    <span className="timeline-type">{job.type}</span>
+                    <span className="timeline-period">{job.period}</span>
+                  </div>
+                </div>
+
+                <ul className="timeline-highlights">
+                  {job.highlights.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+
+                <div className="timeline-tags">
+                  {job.tags.map((tag, i) => (
+                    <span key={i} className="tech-tag">{tag}</span>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-
+          ))}
         </div>
       </div>
     </section>
