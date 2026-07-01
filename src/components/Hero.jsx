@@ -42,6 +42,21 @@ const Hero = () => {
             Tech Stack
           </a>
         </div>
+
+        <div className="hero-stats">
+          <div className="hero-stat">
+            <span className="hero-stat-value">80%</span>
+            <span className="hero-stat-label">Faster support ops via AI Agents</span>
+          </div>
+          <div className="hero-stat">
+            <span className="hero-stat-value">95%</span>
+            <span className="hero-stat-label">Predictive model accuracy</span>
+          </div>
+          <div className="hero-stat">
+            <span className="hero-stat-value">5K+</span>
+            <span className="hero-stat-label">Client records architected</span>
+          </div>
+        </div>
       </div>
     </section>
   );
