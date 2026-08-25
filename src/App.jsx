@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ArrowUpRight, BriefcaseBusiness, Check, Code2, Mail, Menu, X, Zap } from 'lucide-react'
+import { ArrowUpRight, BriefcaseBusiness, Check, Mail, Menu, Terminal, X, Zap } from 'lucide-react'
 
 const projects = [
   { title: 'FoodDelivery AI Agent', label: 'WhatsApp & Payment Orchestrator', description: 'Conversational agent automating real-time orders, webhook bank reconciliation, and dynamic dispatch routing to the closest delivery driver.', stack: ['n8n', 'WhatsApp Cloud API', 'Supabase', 'Webhooks', 'REST APIs'], href: 'https://github.com/DataBerlinIA' },
@@ -27,7 +27,7 @@ function App() {
         <nav className={menuOpen ? 'nav-links open' : 'nav-links'} aria-label="Main navigation">
           {['About', 'Experience', 'Projects', 'Skills', 'Contact'].map(item => <a key={item} href={`#${item.toLowerCase()}`} onClick={closeMenu}>{item}</a>)}
         </nav>
-        <div className="nav-actions"><a className="button button-ghost" href="/Berlin-Beltran-CV.pdf" download>Download CV</a><a className="icon-link" href="https://github.com/DataBerlinIA" target="_blank" rel="noreferrer" aria-label="GitHub"><Code2 /></a></div>
+        <div className="nav-actions"><a className="button button-ghost" href="/Berlin-Beltran-CV.pdf" download>Download CV</a><a className="icon-link" href="https://github.com/DataBerlinIA" target="_blank" rel="noreferrer" aria-label="GitHub"><Terminal /></a></div>
       </header>
 
       <main id="top">
@@ -38,7 +38,7 @@ function App() {
             <h1>Engineering the intersection of <span>autonomous AI</span>, backend automation & scalable software.</h1>
             <p className="hero-description">Software Engineer specialized in LLM orchestration, agentic workflows, Odoo ERP integrations, and relational databases.</p>
             <div className="hero-actions"><a className="button button-primary" href="#projects">Explore projects <ArrowUpRight /></a><a className="button button-outline" href="#contact">Get in touch <Mail /></a></div>
-            <div className="social-row"><a href="https://github.com/DataBerlinIA" target="_blank" rel="noreferrer"><Code2 /> GitHub</a><a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><BriefcaseBusiness /> LinkedIn</a><a href="mailto:babeltranavila@gmail.com"><Mail /> Email</a></div>
+            <div className="social-row"><a href="https://github.com/DataBerlinIA" target="_blank" rel="noreferrer"><Terminal /> GitHub</a><a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><BriefcaseBusiness /> LinkedIn</a><a href="mailto:babeltranavila@gmail.com"><Mail /> Email</a></div>
           </div>
           <div className="hero-terminal" aria-label="System status visual"><div className="terminal-bar"><span /><span /><span /><b>agent_runtime.ts</b></div><div className="terminal-code"><p><i>01</i> <em>const</em> system = <strong>await</strong> orchestrate();</p><p><i>02</i> system.<em>connect</em>(<q>"human intent"</q>);</p><p><i>03</i> system.<em>scale</em>({`{ reliability: 99.9 }`});</p><div className="terminal-result"><Check /> <span>All systems operational</span><small>latency: 42ms</small></div></div></div>
         </section>
