@@ -27,7 +27,7 @@ function App() {
         <nav className={menuOpen ? 'nav-links open' : 'nav-links'} aria-label="Main navigation">
           {['About', 'Experience', 'Projects', 'Skills', 'Contact'].map(item => <a key={item} href={`#${item.toLowerCase()}`} onClick={closeMenu}>{item}</a>)}
         </nav>
-        <div className="nav-actions"><a className="button button-ghost" href="/Berlin-Beltran-CV.pdf" download>Download CV</a><a className="icon-link" href="https://github.com/DataBerlinIA" target="_blank" rel="noreferrer" aria-label="GitHub"><Terminal /></a></div>
+        <div className="nav-actions"><a className="icon-link" href="https://github.com/DataBerlinIA" target="_blank" rel="noreferrer" aria-label="GitHub"><Terminal /></a></div>
       </header>
 
       <main id="top">
